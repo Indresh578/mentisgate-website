@@ -1,0 +1,20 @@
+name: Deploy to Firebase Hosting
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      # Uncomment the 'run' line below if you need to build your app (like Vite/React) before deploying
+      # - run: npm ci && npm run build 
+      
+      - uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_MENTISGATE_WEBSITE }}
+          projectId: mentisgate-website
+          channelId: live
