@@ -1,0 +1,63 @@
+MENTISGATE WEBSITE - SIMPLE SETUP GUIDE
+======================================
+
+HOW TO OPEN THE WEBSITE ON YOUR COMPUTER
+----------------------------------------
+1. Do not open index.html while it is still inside the ZIP window.
+2. Right-click MentisGate-Website-Ready-to-Upload.zip.
+3. Click "Extract All".
+4. Choose a folder and click "Extract".
+5. Open the extracted MentisGate-Website-Ready-to-Upload folder.
+6. Double-click index.html. It will open as the designed website in Chrome.
+
+If the page appears as plain black text on a white background, it is still
+being opened from inside the ZIP. Extract the complete folder first.
+
+HOW TO PUBLISH IT ON MENTISGATE.ONLINE
+--------------------------------------
+1. Sign in to the control panel supplied by your website hosting company.
+2. Open File Manager.
+3. Open the public_html folder for mentisgate.online.
+4. Upload MentisGate-Website-Ready-to-Upload.zip.
+5. Extract the ZIP inside public_html.
+6. Move everything from the extracted MentisGate-Website-Ready-to-Upload folder directly
+   into public_html. index.html must be directly inside public_html.
+7. Visit https://mentisgate.online and test the website.
+
+HOW TO ENABLE THE ENQUIRY FORM EMAIL
+------------------------------------
+The website already contains send-query.php. You do not need to edit it.
+
+1. Confirm these email accounts exist and can receive normal emails:
+   partnerships@mentisgate.online
+   customercare@mentisgate.online
+2. Ask your hosting support team to do the following:
+
+   "Please enable the PHP mail() function for mentisgate.online and confirm
+   that emails sent by send-query.php can use
+   customercare@mentisgate.online as the From address. Please also confirm
+   that SPF and DKIM are enabled for mentisgate.online."
+
+3. After they confirm, open the website and submit one Partnership enquiry.
+   It should arrive at partnerships@mentisgate.online.
+4. Submit one Customer Care enquiry. It should arrive at
+   customercare@mentisgate.online.
+5. Check Spam/Junk if the first test does not appear in the inbox.
+
+If your hosting company says PHP mail() is not supported, ask them to enable
+SMTP email sending. SMTP needs the outgoing mail server details supplied by
+your hosting company. Their support team can configure it or provide those
+details for a future update.
+
+IMPORTANT FILES
+---------------
+index.html                 Main website
+teacherjob.html            TeacherJob.in product page
+privacy-policy.html        Privacy Policy
+terms-and-conditions.html  Terms & Conditions
+teacherjob-privacy-policy.html       TeacherJob.in Privacy Policy
+teacherjob-terms-and-conditions.html TeacherJob.in Terms & Conditions
+send-query.php             Sends website enquiries
+styles.css                 Website design
+script.js                  Website menu and form behavior
+assets folder              Logo and award photograph
